@@ -13,4 +13,7 @@ classifier=tree.DecisionTreeClassifier()
 classifier.fit(features,labels)
 #test drive
 print classifier.predict([350,2])
+#visualization of our tree
+classifier = classifier.fit(features, labels)
+tree.export_graphviz(clf,out_file='tree.dot')
 
